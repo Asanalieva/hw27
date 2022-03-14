@@ -1,6 +1,6 @@
 package com.company;
 
-public class Box<Q,R>{
+public class Box<Q,R> {
     private Q var1;
     private R var2;
 
@@ -33,5 +33,11 @@ public class Box<Q,R>{
         return "Box:" +
                 " var1: " + var1 +
                 " var2: " + var2;
+    }
+
+    public static  <T> Box method() {
+        Box bo = new Box(33,"Generics");
+        return bo;
+
     }
 }
